@@ -49,7 +49,7 @@ function Widgets({ displayPosts }: WidgetsProps) {
                   Like Counter
                 </h3>
                 <h3 className=" text-gray-500 text-center text-sm">
-                  How many posts you liked
+                  Liked Posts
                 </h3>
                 <div className="flex justify-around items-center mt-0">
                   <svg
@@ -164,7 +164,7 @@ function Widgets({ displayPosts }: WidgetsProps) {
           </div>
         </div>
         {getFollowerData && (
-          <div className="max-w-sm mt-3 border-0 dark:shadow-notificationShadowPink dark:bg-coolGray bg-white border-black shadow-xl dark:border-customPurple rounded-xl p-2 w-[50%]">
+          <div className="max-w-sm mt-3 border-0 dark:shadow-notificationShadowPink dark:bg-coolGray bg-white border-black shadow-xl dark:border-customPurple rounded-xl p-2 w-[50%] max-h-96">
             <h3 className="text-black font-semibold dark:text-white">
               Users
             </h3>
@@ -197,7 +197,7 @@ function Widgets({ displayPosts }: WidgetsProps) {
             })}
           </div>
         )}
-        <form className="max-w-sm mt-3 border-0 dark:shadow-notificationShadowPink dark:bg-coolGray bg-white border-black shadow-xl dark:border-customPurple rounded-xl p-2 w-[50%]">
+        {/* <form className="max-w-sm mt-3 border-0 dark:shadow-notificationShadowPink dark:bg-coolGray bg-white border-black shadow-xl dark:border-customPurple rounded-xl p-2 w-[50%]">
           <div className="mb-2">
             <h3 className="text-black font-semibold dark:text-white">
               Follow Hashtags
@@ -333,7 +333,7 @@ function Widgets({ displayPosts }: WidgetsProps) {
               ></input>
             </div>
           </div>
-        </form>
+        </form> */}
       </div>
     </div>
   );

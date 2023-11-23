@@ -37,11 +37,11 @@ const HomeController: React.FC = () => {
   return (
     // Original Background bg-gradient-to-tr from-lightestWhite via-slate-300 to-lightestWhite
     <div className="homePageMainDiv dark:bg-black bg-mediumWhite ml-0 sm:ml-20">
-      <div className="grid grid-cols-6 gap-4">
-        <div className="sm:block hidden bg-mainDarkPurple border-customPurpleDark border-r-[2px] lg:col-span-1 sm:col-span-0 dark:border-0 dark:bg-mainPurple">
+      <div className="grid lg:grid-cols-6 md:grid-cols-span-4 gap-4">
+        <div className="lg:block hidden bg-mainDarkPurple border-customPurpleDark border-r-[2px] min-w-72 lg:col-span-1 sm:col-span-0 dark:border-0 dark:bg-mainPurple">
           <div className="bg-darkestWhite  dark:bg-darkModeDarkestGray h-[100%] p-2 pt-20 secondaryMenuMainDiv"></div>
         </div>
-        <div className="sm:col-span-3 col-span-6 sm:pl-40 pl-0">
+        <div className="sm:col-span-3 md:col-span-2 lg:col-span-3 col-span-6 sm:pl-40 pl-0">
           <div className="homePageFeedMainDiv pt-16 sm:pt-0 sm:pl-2 sm:pr-2 pr-1 pl-1 border-customPurpleDark dark:border-customPurple">
             <div className="feedPostsTop"></div>
             {displayPosts
@@ -52,7 +52,7 @@ const HomeController: React.FC = () => {
           </div>
         </div>
         {Auth.loggedIn() && (
-          <div className="col-span-2 mt-4">
+          <div className="md:col-span-1 lg:col-span-2 mt-4">
             <div className="homepageInfoMainDiv">
               <CreateAPost setDisplayPosts={setDisplayPosts} />
               <Widgets displayPosts={displayPosts}/>
